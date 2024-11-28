@@ -5,15 +5,15 @@ global.APIs = {
   alya: 'https://api.alyachan.dev'
 }
 global.APIKeys = {
-  'https://api.alyachan.dev': 'lynxcyy' // apikey alya 97% pke api dari dia
+  'https://api.alyachan.dev': '' // apikey alya 97% pke api dari dia
 }
 
 // -------------[SET]--------- \\
 global.set = {
-  wm: '`© ʟʏɴxʙᴏᴛ`',
-  footer: '`ꜱɪᴍᴘʟᴇ ʟʏɴxʙᴏᴛ ᴡʜᴀᴛꜱᴀᴘᴘ`',
-  packname: 'ꜱᴛɪᴄᴋᴇʀ ʙʏ',
-  author: '© ʟʏɴxʙᴏᴛ'
+  wm: '`© ʟʏɴxʙᴏᴛ`', // bebas edit
+  footer: '`ꜱɪᴍᴘʟᴇ ʟʏɴxʙᴏᴛ ᴡʜᴀᴛꜱᴀᴘᴘ`', // edit
+  packname: 'ꜱᴛɪᴄᴋᴇʀ ʙʏ', // edit
+  author: '© ʟʏɴxʙᴏᴛ'  // edit
 }
 
 /*========== HIASAN ===========*/
@@ -38,21 +38,21 @@ global.decor = {
 	htjava: '❃'
 }
 // ----------[GLOBAL]--------- \\
-global.maxwarn = '5'
-global.sig = 'https://www.instagram.com/f30_____________' // ig
-global.ell = 'https://telegra.ph/file/e2be53893d725580aefb9.jpg' // thumb
+global.maxwarn = '5' // max warning di gc, klo mentok bocahnya auto di kick bot
+global.sig = 'https://www.instagram.com/f30_____________' // Ganti aja
+global.ell = 'https://telegra.ph/file/e2be53893d725580aefb9.jpg' // thumb Bebas ganti
 global.packname = 'ꜱᴛɪᴄᴋᴇʀ ʙʏ', // ganti aja cuy
-global.wm = '© ʟʏɴxʙᴏᴛ' // ganti
-global.nomorown = '6281222844295' // gnti 
-global.author = 'ᴇʟʟ ᴅᴇ ʟʏɴx' // ganti 
-global.creator = 'ᴇʟʟ ᴅᴇ ʟʏɴx'  // ganti 
+global.wm = '© ʟʏɴxʙᴏᴛ' // ganti aja
+global.nomorown = ' ' // Nomor Owner
+global.author = 'ᴇʟʟ ᴅᴇ ʟʏɴx' // ganti aja
+global.creator = 'ᴇʟʟ ᴅᴇ ʟʏɴx'  // ganti aj
 global.eror = 'Error jing,Report ke owner dengan cara .report `Laporan`',
 global.wait = 'Tunggu yaa kak....',
 global.mongouri = ''
 global.replit_url = ''
-global.multiplier = 70
-global.max_upload = 20000000000000000000000000000
-global.ram_usage = 7100000000
+global.multiplier = 70 // multiplier buat naik level
+global.max_upload = 20000000000000000000000000000 // max upload
+global.ram_usage = 7100000000 // max penggunaan ram
 global.Func = new (require('./lib/functions'))
 global.scrap = new (require('./lib/scrape'))
 global.flaaa = [
@@ -64,11 +64,11 @@ global.flaaa = [
 ]
 
 // =======[PANEL]====== \\
-global.dop = "dop_v1_b531e9d6d912cfaf6866ee92d0497fdd6603de22105285344e9df7e13f6bf69c" //token do
-global.domain = "https://panel.lynxbotapi.xyz" // web panel [ wajib pake https:// ]
-global.papikey = "ptla_Wd0tj0lR45mUKesjo3rDKCDytmrzALUNe7HnDb98MdI" // api plta
-global.capikey = "ptlc_ZdNcPfMQH9kcZmLzfr8IydpZbLQPxSntxTIqgFA5c4P" // api pltc
-global.egg = "16"
+global.dop = " " //token do buat create vps
+global.domain = "https://" // web panel [ wajib pake https:// ]
+global.papikey = " " // api plta
+global.capikey = " " // api pltc
+global.egg = "15"
 global.loc = "1"
 // -----------[STATUS]----------- \\
 global.status = {
