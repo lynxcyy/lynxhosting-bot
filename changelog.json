@@ -1,0 +1,117 @@
+{
+  "v1": [
+    {
+      "log": "Fix Buttons Menu"
+    },
+    {
+      "log": "Added buttons For .play"
+    },
+    {
+      "log": "Added Some VN Databases"
+    },
+    {
+      "log": "Added Game Menu"
+    },
+    {
+      "log": "Added More RPG Games"
+    },
+    {
+      "log": "Added Slide Pinterest"
+    },
+    {
+      "log": "Added Game Menu"
+    },
+    {
+      "log": "fix fitur daftar dan verify"
+    },
+    {
+      "log": "fix ceksn"
+    },
+    {
+      "log": "added changelog"
+    },
+    {
+      "log": "fix txt2img feature"
+    }
+  ],
+  "v2": [
+    {
+      "log": "Major update!"
+    },
+    {
+      "log": "Fixed getpp"
+    },
+    {
+      "log": "Fixed qc ( sticker ) with ur pp"
+    },
+    {
+      "log": "Added new features: Get ID Channel"
+    },
+    {
+      "log": "Added new features: send messages to channel"
+    },
+    {
+      "log": "Added new features: Broadcast Slide"
+    },
+    {
+      "log": "Added new features: Broadcast With Button"
+    },
+    {
+      "log": "Added some Pterodactyl features"
+    },
+    {
+      "log": "Added some VPS features"
+    },
+    {
+      "log": "fixed ssweb"
+    },
+    {
+      "log": "Added New Feature: List admin group"
+    },
+    {
+      "log": "Fixed Feature: Chord"
+    },
+    {
+      "log": "Added New Feature: clearsession(owner)"
+    },
+    {
+      "log": "Added New Feature: cleartmp(owner)"
+    },
+    {
+      "log": "Added New Feature: resetlimit(owner)"
+    },
+    {
+      "log": "Added New Feature: mode (self|public) (owner)"
+    },
+    {
+      "log": "Added New Feature: setprefix (owner)"
+    },
+    {
+      "log": "Added New Feature: Auto AI"
+    },
+    {
+      "log": "Added New Features: decrypt encrypt code"
+    },
+    {
+      "log": "Added new feature: get device user"
+    },
+    {
+      "log": "Added new feature: cekresolution photo"
+    },
+    {
+      "log": "Added new feature: Obfuscate code"
+    },
+    {
+      "log": "Added New Feature: NSFW (PEKOB)"
+    },
+    {
+      "log": "Added New Feature: Readmore"
+    },
+    {
+      "log": "Added New Feature: Fakesize"
+    },
+    {
+      "log": "Added New Features: BUG MENU CUY"
+    }
+  ]
+}
