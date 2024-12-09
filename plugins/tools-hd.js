@@ -52,7 +52,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 handler.command = handler.help = ['hd', 'hd2', 'hd3','removebg','nobg'];
 handler.tags = ['tools'];
-handler.register = true;
-handler.limit = 3;
+handler.premium = false;
+handler.limit = false;
 
 module.exports = handler;

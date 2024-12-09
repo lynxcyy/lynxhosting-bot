@@ -624,7 +624,7 @@ module.exports = {
           if (!'rpg' in settings) settings.rpg = false
           if (!isNumber(settings.style)) settings.style = 3
           if (!'owners' in settings) settings.owners = ['6281222844295']
-          if (!'link' in settings) settings.link = 'https://chat.whatsapp.com/Bpzg40FTgYa9trttCoFEKi'
+          if (!'link' in settings) settings.link = 'https://chat.whatsapp.com/DG2Z2hEzE2NA8oNUPesYaT'
           if (!'cover' in settings) settings.cover = fs.readFileSync('./media/ell.jpg')
         } else db.data.settings[this.user.jid] = {
           anticall: true,
@@ -636,7 +636,7 @@ module.exports = {
           rpg: false,
           style: 3,
           owners: ['6281222844295'],
-          link: 'https://chat.whatsapp.com/Bpzg40FTgYa9trttCoFEKi',
+          link: 'https://chat.whatsapp.com/DG2Z2hEzE2NA8oNUPesYaT',
           cover: fs.readFileSync('./media/ell.jpg')
         }
       } catch (e) {
@@ -684,9 +684,9 @@ module.exports = {
       if (opts['nyimak']) return
       if (!m.fromMe && !isROwner && opts['self']) return
       if (opts['pconly'] && m.chat.endsWith('g.us')) return
-      if (opts['gconly'] && !m.fromMe && !m.chat.endsWith('g.us') && !global.db.data.users[m.sender].premium && !global.db.data.users[m.sender].vip)
+      if (opts['gconly'] && !m.fromMe && !m.chat.endsWith('g.us') && !global.db.data.users[m.sender].premium && !global.db.data.users[m.sender].vip && !global.db.data.users[m.sender].isOwner)
 return this.sendMessage(m.chat, {
-text: '```🚩 Akses Bot Ke Private Chat Di Tolak, Upgrade Premium Hanya Rp 5.000 Agar Bisa Bebas Akses Bot Dengan Hubungi Owner : ```' + `@${nomorown.split("@")[0]}` + '```\n\n• Join Ke Group Official Bot Untuk Free Akses & Informasi Kedepannya Tentang Bot : https://chat.whatsapp.com/Bpzg40FTgYa9trttCoFEKi```',
+text: '```🚩 Akses Bot Ke Private Chat Di Tolak, Upgrade Premium Hanya Rp 5.000 Agar Bisa Bebas Akses Bot Dengan Hubungi Owner : ```' + `@${nomorown.split("@")[0]}` + '```\n\n• Join Ke Group Official Bot Untuk Free Akses & Informasi Kedepannya Tentang Bot : https://chat.whatsapp.com/DG2Z2hEzE2NA8oNUPesYaT```',
 contextInfo: {
 mentionedJid: [m.sender, nomorown],
 externalAdReply: { showAdAttribution: true, 

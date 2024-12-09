@@ -1,23 +1,24 @@
-let { sticker } = require('../lib/sticker.js')
-let axios = require('axios')
+let { sticker } = require('../lib/sticker.js');
+let axios = require('axios');
 
 let handler = async (m, { conn, args }) => {
-let text
+  try {
+    let text;
     if (args.length >= 1) {
-        text = args.slice(0).join(" ")
+      text = args.slice(0).join(" ");
     } else if (m.quoted && m.quoted.text) {
-        text = m.quoted.text
-    } else throw "Input teks atau reply teks yang ingin di jadikan quote!"
-   if (!text) return m.reply('masukan text')
-   if (text.length > 100) return m.reply('Maksimal 100 Teks!')
+      text = m.quoted.text;
+    } else throw "Input teks atau reply teks yang ingin dijadikan quote!";
 
-let randomColor = ['#000000'];
+    if (!text) return m.reply('Masukkan teks.');
+    if (text.length > 100) return m.reply('Maksimal 100 karakter teks!');
 
-const apiColor = randomColor[Math.floor(Math.random() * randomColor.length)];
+    let randomColor = ['#000000'];
+    const apiColor = randomColor[Math.floor(Math.random() * randomColor.length)];
 
-    let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/320b066dc81928b782c7b.png')
+    let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/320b066dc81928b782c7b.png');
 
-   const obj = {
+    const obj = {
       "type": "quote",
       "format": "png",
       "backgroundColor": apiColor,
@@ -25,31 +26,39 @@ const apiColor = randomColor[Math.floor(Math.random() * randomColor.length)];
       "height": 768,
       "scale": 2,
       "messages": [{
-         "entities": [],
-         "avatar": true,
-         "from": {
-            "id": 1,
-            "name": m.name,
-            "photo": {
-               "url": pp
-            }
-         },
-         "text": text,
-         "replyMessage": {}
+        "entities": [],
+        "avatar": true,
+        "from": {
+          "id": 1,
+          "name": m.name || m.sender.split('@')[0],
+          "photo": {
+            "url": pp
+          }
+        },
+        "text": text,
+        "replyMessage": {}
       }]
-   }
-   const json = await axios.post('https://btzqc.betabotz.eu.org/generate', obj, {
+    };
+
+    const json = await axios.post('https://btzqc.betabotz.eu.org/generate', obj, {
       headers: {
-         'Content-Type': 'application/json'
+        'Content-Type': 'application/json'
       }
-   })
-   const buffer = Buffer.from(json.data.result.image, 'base64')
-   let stiker = await sticker(buffer, false, global.packname, global.author)
-    if (stiker) return conn.sendFile(m.chat, stiker, 'Quotly.webp', '', m)
-}
+    });
 
-handler.help = ['qc']
-handler.tags = ['sticker']
-handler.command = /^(qc|quotely)$/i
+    const buffer = Buffer.from(json.data.result.image, 'base64');
+    let stiker = await sticker(buffer, false, global.packname, global.author);
 
-module.exports = handler
+    if (stiker) {
+      return conn.sendFile(m.chat, stiker, 'Quotly.webp', '', m);
+    }
+  } catch (err) {
+    m.reply(`Terjadi kesalahan:\n${err}`);
+  }
+};
+
+handler.help = ['qc'];
+handler.tags = ['sticker'];
+handler.command = /^(qc|quotely)$/i;
+
+module.exports = handler;

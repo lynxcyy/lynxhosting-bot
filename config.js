@@ -2,10 +2,12 @@ global.owner = ['6281222844295']
 
 // -----------[APIKEY]------\\
 global.APIs = {
-  alya: 'https://api.alyachan.dev'
+  alya: 'https://api.alyachan.dev',
+  lann: 'https://api.betabotz.eu.org'
 }
 global.APIKeys = {
-  'https://api.alyachan.dev': '' // apikey alya 97% pke api dari dia
+  'https://api.alyachan.dev': 'lynxcyy', // apikey alya 97% pke api dari dia
+  'https://api.betabotz.eu.org': 'lynxcyy', 
 }
 
 // -------------[SET]--------- \\
@@ -38,12 +40,13 @@ global.decor = {
 	htjava: '❃'
 }
 // ----------[GLOBAL]--------- \\
+global.lann = 'lynxcyy' // apikey betabotz
 global.maxwarn = '5' // max warning di gc, klo mentok bocahnya auto di kick bot
 global.sig = 'https://www.instagram.com/f30_____________' // Ganti aja
 global.ell = 'https://telegra.ph/file/e2be53893d725580aefb9.jpg' // thumb Bebas ganti
 global.packname = 'ꜱᴛɪᴄᴋᴇʀ ʙʏ', // ganti aja cuy
 global.wm = '© ʟʏɴxʙᴏᴛ' // ganti aja
-global.nomorown = '6281222844295' // Nomor Owner
+global.nomorown = ' ' // Nomor Owner
 global.author = 'ᴇʟʟ ᴅᴇ ʟʏɴx' // ganti aja
 global.creator = 'ᴇʟʟ ᴅᴇ ʟʏɴx'  // ganti aj
 global.eror = 'Error jing,Report ke owner dengan cara .report `Laporan`',
